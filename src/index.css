@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  background-color: rgba(194, 206, 245, 0.753);
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.searchLocation {
+  border-radius: 12px ;
+  margin-right: 10px;
+  /* background-color:orangered */
+  /* bordor-color : orangered; */
+}
+.Location{
+ width: 370px ;
+ margin-top: 550px;
+}
+.Header {
+  background-image: url(./diiis.png) ;
+  background-repeat: no-repeat ;
+  /* background-size :  200px 750px; */
+  background-size: cover ;
+  height: 600px;
+  margin-bottom: 20px;
+  
+  
+  
+    
+  
+  
+}
+.start {
+  color : yellow ;
+  font-size: 13px;
+  margin-top:30px;
+  font-weight: bold;
+}
+.end{
+  color : yellow;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.text h1 {
+color : rgb(245, 206, 206) ;
+position: absolute;
+top: 88px;
+left: 13px;
+font-size: 85px;
+font-family:fantasy;
+font-weight: bold ;
+} 
+.text h2 {
+  color : rgb(245, 206, 206) ;
+  position: absolute;
+  top: 170px;
+  left: 80px;
+  font-size: 70px;
+  font-family:fantasy;
+  } 
+  
+.cardEvent{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  float: left;
+  width: 33%;
+  margin-bottom: 15px;
+  
+  
+}
+
+.location {
+  text-align: center;
+  /* margin-bottom:1px; */
+  color:yellow;
+  font-size:12px;
+}
+/* .descr{
+  text-align: right;
+  margin-bottom:13px;
+  color:rgb(255, 255, 255);
+  font-size:9px;
+} */
+
+ 
+.flip-card {
+  background-color: transparent;
+  /* width: 400px; */
+  height: 315px;
+  perspective: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  float: left;
+  width: 30%;
+  margin-bottom: 15px;
+  padding : 10px;  
+}
+
+
+
+
+img{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  border-radius: 15px;
+  box-shadow:3px 2px 6px rgb(85, 84, 84);
+
+}
+
+.flip-card:active .flip-card-inner { 
+  transform: rotateY(180deg);
+  border-radius: 15px;
+  
+} 
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+}
+
+.flip-card-front {
+  
+  background-color:rgb(19, 1, 56);
+  color: black;
+  z-index: 2;
+  border-radius: 15px;
+  /* width:70%; */
+}
+
+.flip-card-back {
+ 
+  background-color:rgba(18, 6, 73, 0.068);
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+  border-radius: 15px;
+  box-shadow:3px 6px 8px rgb(29, 4, 80);
+  background-image: url(./fire.jpg) ;
+  background-size: 1550px;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+.white{
+  color:white ;
+  margin-top:3px;
+  font-size:13px;
+}
+
+.nameE{
+  color : white ;
+  margin-top : 8px;
+}
+
+h5 {
+  color : white;
+  /* font-weight: bold ; */
+  font-size:15px;
+  margin-top:20px;
+  font-weight: bold;
+}
+
+h6{
+  color:white;
+  font-size : 10px;
+  text-align: left;
+  margin-left:5px;
+  margin-top:15px;
+}
+
+.desc{
+  color:rgb(212, 211, 211);
+  text-align:left;
+  font-size : 12px;
+  margin-left: 5px;
+  margin-top:5px;
+}
+
+h4{
+  margin-top:20px;
+  color:rgb(255, 251, 0);
+  font-weight: bold ;
+  font-size:13px;
+text-align: left;
+margin-left: 5px;
+margin-top:29px;
+}
+
+.name{
+  font-size: 20px;
+  margin-top:15px;
+  color:rgb(255, 255, 255);
+}
+
+.test{
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  color:rgb(255, 0, 0);
+  font-size: 13px;
+  background : white ;
+  margin-top:1px;
+padding-left: 8px;
+padding-right: 8px;
+padding-top: 5px;
+padding-bottom: 5px;
+border-radius: 10px; 
+}
+
+
